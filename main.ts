@@ -19,4 +19,4 @@ if (!existsSync(source)) {
 }
 mkdirSync(outputDir, { recursive: true });
 copyFileSync(source, join(outputDir, "VIDEO.json"));
-console.log("wrote VIDEO.json to " + outputDir);
+console.log(`wrote ${source} to ${join(outputDir, "VIDEO.json")}`);
